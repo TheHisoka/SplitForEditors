@@ -1,6 +1,22 @@
-plugins { id("com.android.application"); id("org.jetbrains.kotlin.android"); id("org.jetbrains.kotlin.plugin.compose") }
-android { namespace = "com.splitforeditors.app"; compileSdk = 35
- defaultConfig { applicationId = "com.splitforeditors.app"; minSdk = 29; targetSdk = 35; versionCode = 2; versionName = "2.0" }
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.compose")
+}
+
+android {
+    namespace = "com.splitforeditors.app"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.splitforeditors.app"
+        minSdk = 29
+        targetSdk = 35
+        versionCode = 2
+        versionName = "2.0"
+    }
+}
+
 dependencies {
     implementation("androidx.core:core-ktx:1.15.0")
     implementation("androidx.activity:activity-compose:1.10.1")
